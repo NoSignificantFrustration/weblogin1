@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Bejelentkezés</title>
+    <script>
+        function regcheck() {
+            var jszo = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
+            if(jszo=="" || email=="") {
+                alert("Minden mezőt töltsön ki!");
+                return false;
+            } 
+            return true;
+        }
+    </script>
+</head>
+<body class="loginPage">
+    <div id="login">
+        <h1>Bejelentkezés</h1>
+        <form action="auth" method="POST" onsubmit="return regcheck();">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Az ön e-mail címe">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Az ön jelszava">
+            <input type="submit" value="Bejelentkezés">
+            <a href="/register">Regisztráljon a belépéshez ide kattintva!</a>
+        </form>
+        
+    </div>
+</body>
+</html>

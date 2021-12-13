@@ -1,0 +1,35 @@
+
+#login {
+    width: 400px;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#login input {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    
+   
+}
+
+#login input[type='submit'] {
+    background-color: rgb(67, 123, 245);
+    color: white;
+    font-weight: bold;
+}
+
+#login label {
+    text-align: left;
+    font-weight: bold;
+    float: left;
+}
+
+.loginPage {
+    background-color: rgb(226, 226, 226);
+}
